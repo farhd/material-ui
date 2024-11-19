@@ -5,11 +5,11 @@ export default function ValueAsFunction() {
   return (
     <div>
       <Box
-        sx={{
+        sx={(theme) => ({
           p: 1,
           border: 1,
-          borderColor: (theme) => theme.palette.primary.main,
-        }}
+          borderColor: theme.palette.primary.main,
+        })}
       >
         Border color with theme value.
       </Box>
